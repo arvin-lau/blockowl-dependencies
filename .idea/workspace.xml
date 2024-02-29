@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chainExplorer/pushTx.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/pushTx.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/xiaodong",
+    "last_opened_file_path": "/Users/xiaodong/go/src/blockowl-dependencies",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "settings.editor.selected.configurable": "go.sdk"

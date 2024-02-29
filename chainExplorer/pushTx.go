@@ -7,14 +7,14 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-type pushTxResp struct {
+type PushTxResp struct {
 	Msg  string `json:"msg"`
 	Code string `json:"code"`
 	Data string `json:"data"`
 }
 
 // PushTx push tx to chain explorer
-func PushTx(chain string, pushTxDate string) (resp pushTxResp, err error) {
+func PushTx(chain string, pushTxDate string) (resp PushTxResp, err error) {
 	url := GetChainExplorerHost() + pushTxPath
 	param := fmt.Sprintf(`{"chainShortName":"%v", "signedTx":"%v"}`, chain, pushTxDate)
 	log.Info().Msg("param: " + param)
