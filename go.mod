@@ -1,6 +1,6 @@
 module github.com/arvin-lau/blockowl-dependencies
 
-go 1.21.5
+go 1.19
 
 require (
 	github.com/parnurzeal/gorequest v0.3.0
