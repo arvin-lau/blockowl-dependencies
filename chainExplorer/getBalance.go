@@ -8,13 +8,13 @@ import (
 	"github.com/shopspring/decimal"
 )
 
-type getBalanceResp struct {
+type GetBalanceResp struct {
 	Msg  string          `json:"msg"`
 	Code string          `json:"code"`
 	Data decimal.Decimal `json:"data"`
 }
 
-func GetAddressBalance(chain string, addr string) (resp getBalanceResp, err error) {
+func GetAddressBalance(chain string, addr string) (resp GetBalanceResp, err error) {
 	url := fmt.Sprintf(GetChainExplorerHost()+getBalancePath, chain, addr)
 	_, _, errSli := gorequest.New().
 		Get(url).

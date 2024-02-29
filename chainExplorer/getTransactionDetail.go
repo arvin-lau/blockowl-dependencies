@@ -7,7 +7,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-type getTransactionDetailResp struct {
+type GetTransactionDetailResp struct {
 	Msg  string `json:"msg"`
 	Code string `json:"code"`
 	Data struct {
@@ -27,7 +27,7 @@ type getTransactionDetailResp struct {
 	} `json:"data"`
 }
 
-func GetTransactionDetail(chain string, txId string) (resp getTransactionDetailResp, err error) {
+func GetTransactionDetail(chain string, txId string) (resp GetTransactionDetailResp, err error) {
 	url := fmt.Sprintf(GetChainExplorerHost()+getTransactionDetail, chain, txId)
 	_, _, errSli := gorequest.New().
 		Get(url).

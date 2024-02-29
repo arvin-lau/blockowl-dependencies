@@ -7,7 +7,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
-type getAccountInfoResp struct {
+type GetAccountInfoResp struct {
 	Msg  string `json:"msg"`
 	Code string `json:"code"`
 	Data struct {
@@ -24,7 +24,7 @@ type getAccountInfoResp struct {
 	} `json:"data"`
 }
 
-func GetAccountInfo(chain string, addr string) (resp getAccountInfoResp, err error) {
+func GetAccountInfo(chain string, addr string) (resp GetAccountInfoResp, err error) {
 	url := fmt.Sprintf(GetChainExplorerHost()+getAccountInfoPath, chain, addr)
 	_, _, errSli := gorequest.New().
 		Get(url).

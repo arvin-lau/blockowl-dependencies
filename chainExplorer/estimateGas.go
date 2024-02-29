@@ -8,7 +8,7 @@ import (
 	"github.com/shopspring/decimal"
 )
 
-type estimateGasResp struct {
+type EstimateGasResp struct {
 	Msg  string `json:"msg"`
 	Code string `json:"code"`
 	Data struct {
@@ -17,7 +17,7 @@ type estimateGasResp struct {
 	} `json:"data"`
 }
 
-func EstimateGas(chain string) (resp estimateGasResp, err error) {
+func EstimateGas(chain string) (resp EstimateGasResp, err error) {
 	url := fmt.Sprintf(GetChainExplorerHost()+estimateGasPath, chain)
 	_, _, errSli := gorequest.New().
 		Get(url).
