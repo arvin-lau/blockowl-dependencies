@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chainExplorer/getTokenBalance.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chainExplorer/getTokenBalance_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chainExplorer/pushTx.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/pushTx.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chainExplorer/reqPath.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/reqPath.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go1.21.5/go" />
   <component name="Git.Settings">
@@ -27,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
