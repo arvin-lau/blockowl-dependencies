@@ -6,8 +6,8 @@ import (
 )
 
 func TestGetAddressTokenBalance(t *testing.T) {
-	InitChainExplorerHost("")
-	balanceResp, err := GetAddressTokenBalance("BLAST", "0x0e0d6ECDa5975fc5805567eD3ceb5DEc0F4B656E", "0x4300000000000000000000000000000000000003")
+	InitChainExplorerHost("http://192.168.50.90:9082")
+	balanceResp, err := GetAddressTokenBalance("BLAST", "0x020ca66c30bec2c4fe3861a94e4db4a498a35872", "0x4300000000000000000000000000000000000003")
 	if err != nil {
 		fmt.Println("ERROR: GetAddressTokenBalance err:", err)
 		return
