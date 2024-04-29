@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,19 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestPushTx in github.com/arvin-lau/blockowl-dependencies/chainExplorer">
+    <configuration name="TestGetAddressTokenBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="blockowl-dependencies" />
+      <working_directory value="$PROJECT_DIR$/chainExplorer" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetAddressTokenBalance\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestGetBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="blockowl-dependencies" />
       <working_directory value="$PROJECT_DIR$/chainExplorer" />
@@ -66,8 +76,22 @@
       <pattern value="^\QTestGetBalance\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestPushTx in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="blockowl-dependencies" />
+      <working_directory value="$PROJECT_DIR$/chainExplorer" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestPushTx\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestPushTx in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
+        <item itemvalue="Go Test.TestGetAddressTokenBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
         <item itemvalue="Go Test.TestGetBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
       </list>
     </recent_temporary>
