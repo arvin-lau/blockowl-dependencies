@@ -20,7 +20,7 @@ func GetAddressTokenBalance(chain, addr, contractAddr string) (resp GetBalanceRe
 		Get(url).
 		EndStruct(&resp)
 	if len(errSli) != 0 {
-		errMsg := fmt.Sprintf("chain explorer GetAddressTokenBalance err: %v reqUrl: %v resp: %v", err, url, resp)
+		errMsg := fmt.Sprintf("chain explorer GetAddressTokenBalance err: %v reqUrl: %v resp: %v", errSli, url, resp)
 		log.Error().Msg(errMsg)
 		return resp, errors.New(errMsg)
 	}

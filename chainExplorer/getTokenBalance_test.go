@@ -6,11 +6,12 @@ import (
 )
 
 func TestGetAddressTokenBalance(t *testing.T) {
-	InitChainExplorerHost("http://192.168.50.90:9082")
-	balanceResp, err := GetAddressTokenBalance("BLAST", "0x020ca66c30bec2c4fe3861a94e4db4a498a35872", "0x4300000000000000000000000000000000000003")
+	InitChainExplorerHost("http://172.247.43.218:9082")
+	//balanceResp, err := GetAddressTokenBalance("SOLANA", "C5WZuYdaHBNFrWBUDYGBBNyFMPbc1shVGY6a6Sk8Rckm", "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB")
+	balanceResp, err := GetAddressTokenBalance("SOLANA", "47TT6EGsiSRempYCGXrxUTxSpKCTz6GPHdgeUjK5RzXW", "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB")
 	if err != nil {
 		fmt.Println("ERROR: GetAddressTokenBalance err:", err)
 		return
 	}
-	fmt.Println("balanceResp:", balanceResp)
+	fmt.Printf("balanceResp:%+v", balanceResp)
 }
