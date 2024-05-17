@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chainExplorer/getTokenBalance.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/getTokenBalance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chainExplorer/getTokenBalance_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/getTokenBalance_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
