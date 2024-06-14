@@ -17,7 +17,7 @@ type PushTxResp struct {
 func PushTx(chain string, pushTxDate string) (resp PushTxResp, err error) {
 	url := GetChainExplorerHost() + pushTxPath
 	param := fmt.Sprintf(`{"chainShortName":"%v", "signedTx":"%v"}`, chain, pushTxDate)
-	log.Info().Msg("param: " + param)
+	log.Info().Msg("PushTx param: " + param)
 	_, _, errSli := gorequest.New().Post(url).
 		Set("Content-Type", "application/json").
 		//SendStruct(reqParam).
@@ -29,9 +29,9 @@ func PushTx(chain string, pushTxDate string) (resp PushTxResp, err error) {
 		return resp, errors.New(errMsg)
 	}
 	if resp.Code != SuccessfulCode {
-		errMsg := fmt.Sprintf("chainExplorer.PushTx err resp.Code != SuccessfulCode,url: %v param: %v resp: %+v", url, param, resp)
+		errMsg := fmt.Sprintf("chainExplorer.PushTx err resp.Code != SuccessfulCode,url: %v  resp: %+v", url, resp)
 		log.Error().Msg(errMsg)
-		return resp, errors.New(errMsg)
+		return resp, errors.New(resp.Msg)
 	}
 	return resp, nil
 }
