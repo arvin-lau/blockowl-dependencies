@@ -26,7 +26,7 @@ func PushTx(chain string, pushTxDate string) (resp PushTxResp, err error) {
 	if len(errSli) != 0 {
 		errMsg := fmt.Sprintf("chain explorer PushTx err: %v reqUrl: %v resp: %v", errSli, url, resp)
 		log.Error().Msg(errMsg)
-		return resp, errors.New(errMsg)
+		return resp, errors.New(fmt.Sprintf("%v", errSli))
 	}
 	if resp.Code != SuccessfulCode {
 		errMsg := fmt.Sprintf("chainExplorer.PushTx err resp.Code != SuccessfulCode,url: %v  resp: %+v", url, resp)
