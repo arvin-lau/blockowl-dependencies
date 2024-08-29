@@ -49,12 +49,15 @@ func (k *KmClient) GetAccountAddress(wid uint32, coin types.CoinType, addressidx
 	return address, pK, err
 }
 
-func (k *KmClient) SignHash(wid uint32, coin types.CoinType, addressidx uint32, hash []byte) (sig []byte, err error) {
+func (k *KmClient) SignHash(wid uint32, coin types.CoinType, addressidx uint32, hash []byte, lenVin ...int) (sig []byte, err error) {
 	args := types.ArgsSign{
 		Wid:          wid,
 		CoinType:     coin,
 		AddressIndex: addressidx,
 		Hash:         hash,
+	}
+	if len(lenVin) != 0 {
+		args.LenVin = lenVin[0]
 	}
 	reply := &types.ReplySign{}
 	err = k.xclient.Call(context.Background(), runFuncName(), args, reply)

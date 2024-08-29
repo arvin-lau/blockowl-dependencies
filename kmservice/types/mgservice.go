@@ -38,6 +38,7 @@ type ArgsSign struct {
 	CoinType     CoinType
 	AddressIndex uint32
 	Hash         []byte
+	LenVin       int
 }
 
 type ReplySign struct {
