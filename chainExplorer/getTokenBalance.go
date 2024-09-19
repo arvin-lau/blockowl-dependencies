@@ -15,7 +15,9 @@ type GetTokenBalanceResp struct {
 }
 
 func GetAddressTokenBalance(chain, addr, contractAddr string) (resp GetBalanceResp, err error) {
+	balanceZeroRetryNum := 0
 	url := fmt.Sprintf(GetChainExplorerHost()+getTokenBalancePath, chain, addr, contractAddr)
+retry:
 	_, _, errSli := gorequest.New().
 		Get(url).
 		EndStruct(&resp)
@@ -28,6 +30,13 @@ func GetAddressTokenBalance(chain, addr, contractAddr string) (resp GetBalanceRe
 		errMsg := fmt.Sprintf("chainExplorer.GetAddressTokenBalance err resp.Code != chainExplorer.SuccessfulCode, url: %v resp: %+v", url, resp)
 		log.Error().Msg(errMsg)
 		return resp, errors.New(errMsg)
+	}
+	if resp.Data == decimal.Zero {
+		if balanceZeroRetryNum < retryNum {
+			chainExplorerRetrySleep(balanceZeroRetryNum)
+			balanceZeroRetryNum++
+			goto retry
+		}
 	}
 	return resp, nil
 }
