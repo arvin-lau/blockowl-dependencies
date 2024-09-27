@@ -25,3 +25,13 @@ func TestGetLatestBlockHash(t *testing.T) {
 	}
 	fmt.Println("latestBlockHash: ", latestBlockHashResp)
 }
+
+func TestEstimateGas(t *testing.T) {
+	InitChainExplorerHost("http://124.156.192.112:9082")
+	latestBlockHashResp, err := EstimateGas("APTOS")
+	if err != nil {
+		log.Error().Msg("GetLatestBlockHash err: " + err.Error())
+		return
+	}
+	fmt.Println("latestBlockHash: ", latestBlockHashResp)
+}
