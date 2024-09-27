@@ -37,8 +37,8 @@ func GetTransactionDetail(chain string, txId string) (resp GetTransactionDetailR
 		log.Error().Msg(errMsg)
 		return resp, errors.New(errMsg)
 	}
-	if resp.Code != SuccessfulCode {
-		errMsg := fmt.Sprintf("chainExplorer.GetTransactionDetail err balanceResp.Code != chainExplorer.SuccessfulCode,req: %v resp: %+v", url, resp)
+	if resp.Code != SuccessfulCode && resp.Code != TxNotExist {
+		errMsg := fmt.Sprintf("chainExplorer.GetTransactionDetail err balanceResp.Code != chainExplorer.SuccessfulCode && resp.Code!=TxNotExist,req: %v resp: %+v", url, resp)
 		log.Error().Msg(errMsg)
 		return resp, errors.New(errMsg)
 	}
