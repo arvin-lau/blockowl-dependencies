@@ -35,3 +35,13 @@ func TestEstimateGas(t *testing.T) {
 	}
 	fmt.Println("latestBlockHash: ", latestBlockHashResp)
 }
+
+func TestGetTransactionDetailListByOklink(t *testing.T) {
+	InitChainExplorerHost("http://124.156.192.112:9082")
+	txDetail, err := GetTransactionDetailListByOklink("BTC", "48020af36d8a0ca900e8f96d345ba40dbb7e535dbf8b1b5c74f664a4a665c9c2,f9d4deeba863679e83bab700461312a3894129d47bc665c120a8dd0080a69ed5")
+	if err != nil {
+		log.Error().Msg("GetTransactionDetailListByOklink err: " + err.Error())
+		return
+	}
+	fmt.Printf("txDetail: %+v", txDetail)
+}

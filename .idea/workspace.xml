@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="" />
+    <list default="true" id="65917a61-d1f2-45bc-9c3c-6e620ed3112c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/chainExplorer/getTransactionDetailListByOklink.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chainExplorer/chainExplorer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/chainExplorer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chainExplorer/reqPath.go" beforeDir="false" afterPath="$PROJECT_DIR$/chainExplorer/reqPath.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +56,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestEstimateGas in github.com/arvin-lau/blockowl-dependencies/chainExplorer">
+  <component name="RunManager" selected="Go Test.TestGetTransactionDetailListByOklink in github.com/arvin-lau/blockowl-dependencies/chainExplorer">
     <configuration name="TestEstimateGas in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="blockowl-dependencies" />
       <working_directory value="$PROJECT_DIR$/chainExplorer" />
@@ -100,7 +105,7 @@
       <pattern value="^\QTestGetLatestBlockHash\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestPushTx in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetTransactionDetailListByOklink in github.com/arvin-lau/blockowl-dependencies/chainExplorer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="blockowl-dependencies" />
       <working_directory value="$PROJECT_DIR$/chainExplorer" />
       <root_directory value="$PROJECT_DIR$" />
@@ -109,16 +114,16 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestPushTx\E$" />
+      <pattern value="^\QTestGetTransactionDetailListByOklink\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetTransactionDetailListByOklink in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
         <item itemvalue="Go Test.TestEstimateGas in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
         <item itemvalue="Go Test.TestGetAddressBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
         <item itemvalue="Go Test.TestGetAddressTokenBalance in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
         <item itemvalue="Go Test.TestGetLatestBlockHash in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
-        <item itemvalue="Go Test.TestPushTx in github.com/arvin-lau/blockowl-dependencies/chainExplorer" />
       </list>
     </recent_temporary>
   </component>
