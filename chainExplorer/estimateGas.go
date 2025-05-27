@@ -12,8 +12,10 @@ type EstimateGasResp struct {
 	Msg  string `json:"msg"`
 	Code string `json:"code"`
 	Data struct {
-		GasFeeCap decimal.Decimal `json:"gas_fee_cap"`
-		GasPrice  decimal.Decimal `json:"gas_price"`
+		GasFeeCap            decimal.Decimal `json:"gas_fee_cap"`
+		GasPrice             decimal.Decimal `json:"gas_price"`
+		BaseFeePerGas        string          `json:"base_fee_per_gas"`
+		MaxPriorityFeePerGas string          `json:"max_priority_fee_per_gas"`
 	} `json:"data"`
 }
 
