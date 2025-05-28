@@ -14,9 +14,9 @@ type PushTxResp struct {
 }
 
 // PushTx push tx to chain explorer
-func PushTx(chain string, pushTxDate string) (resp PushTxResp, err error) {
+func PushTx(chain, pushTxDate, txId string) (resp PushTxResp, err error) {
 	url := GetChainExplorerHost() + pushTxPath
-	param := fmt.Sprintf(`{"chainShortName":"%v", "signedTx":"%v"}`, chain, pushTxDate)
+	param := fmt.Sprintf(`{"chainShortName":"%v", "signedTx":"%v","txId":"%v"}`, chain, pushTxDate, txId)
 	_, _, errSli := gorequest.New().Post(url).
 		Set("Content-Type", "application/json").
 		//SendStruct(reqParam).
